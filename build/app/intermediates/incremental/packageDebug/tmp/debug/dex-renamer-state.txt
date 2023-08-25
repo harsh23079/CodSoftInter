@@ -1,0 +1,4 @@
+#Fri Aug 25 03:43:25 IST 2023
+base.0=/Users/harshmishra/Downloads/codsoft/todoapp/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
