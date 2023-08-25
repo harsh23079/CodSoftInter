@@ -35,7 +35,7 @@ class _ListAddState extends State<ListAdd> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          // automaticallyImplyLeading: false,
+          automaticallyImplyLeading: false,
           title: Center(
             child:
                 Text(widget.initialNote == null ? "Add To do" : "Edit To do"),
@@ -126,13 +126,13 @@ class _ListAddState extends State<ListAdd> {
                           horizontal: 30.0, vertical: 15.0), // Adjust padding
                     ),
                   ),
-                  child: widget.initialNote != Null
+                  child: widget.initialNote == null
                       ? Text(
-                          "Update",
+                          "Submit",
                           style: TextStyle(fontSize: 15),
                         )
                       : Text(
-                          "Submit",
+                          "Update",
                           style: TextStyle(fontSize: 15),
                         )),
             ],

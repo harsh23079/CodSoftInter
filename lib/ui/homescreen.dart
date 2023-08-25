@@ -101,6 +101,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                         onSelected: (value) {
                           if (value == 'delete') {
+                            setState(() {
+                              if (isSelected) {
+                                selectedIndices.remove(index);
+                              }
+                            });
+
                             _deleteNote(index);
                           } else if (value == 'edit') {
                             _editNote(notes[index], index);
